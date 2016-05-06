@@ -1,0 +1,52 @@
+body{
+        margin:0;
+        padding:0;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.6em;
+        border-bottom-color:red;
+        background-color:black;
+}
+
+
+h1 {
+    font-size: 50px;
+    color:#ff0000;
+    font-weight: bold;
+}
+
+
+h2 {
+    color:#800000;
+    font-weight: bold;
+}
+
+h3 {
+    color:#ff3333;
+    font-weight: bold;
+}
+h4 {
+    color:#FFA500;
+    font-weight: bold;
+    text-align: center
+}
+
+p {
+    font-size: 18px;
+    border-color: black;
+    color:gold;
+}
+
+
+li { 
+    margin: 0px; 
+    right: 0px;
+    left:20px;
+}
+
+address {
+    font-size: 18px;
+    color: gold;
+}
+    

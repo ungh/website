@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+ 
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="home.html"><img id="logo" src="/static/image/logo.jpg" alt="view" style="margin-top: -15px; margin-left: 270px; width:50px; height:50px; position: center;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a>
+                <li><a href="aboutus.html">About Us</a>
+                <li><a href="gallery.html">Gallery</a>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contactus.html">Contact Us</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="jumbotron">
+    <div class="container text-center">
+          <img src="/static/image/logo.jpg" alt="view" style="margin-top: 60px; width:210px;height:200px;">
+        <h1>Lamborghini</h1>
+        <h3>Home of the Bull</h3>
+        
+        <div class="btn-group">
+            <a href="huracan.html" class="btn btn-lg btn-default">HURACÁN</a>
+            <a href="aventador.html" class="btn btn-lg btn-default">AVENTADOR</a>
+            <a href="asterion.html" class="btn btn-lg btn-default">ASTERION</a>
+            <a href="centenario.html" class="btn btn-lg btn-default">CENTENARIO</a>
+            <a href="veneno.html" class="btn btn-lg btn-default">VENENO ROADSTER</a>
+        </div>
+    </div>
+</div>
+    
+
+    <h1>Welcome to Automobili Lamborghini Customer Care</h1>
+    <p>Automobili Lamborghini is pleased to offer attentive service that meets all your needs. For further information, please contact us over the phone or email.</p>
+    
+    <h2>Customer Contact Center - International</h2>
+    <p>Phone: +390 519 597182<br>
+    Monday to Friday (except holidays): from 8:00 am to 7:00 pm (GMT +1)</p>
+
+
+
+
+<div class="container">
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-4"></div>
+            <div class="panel panel-default text-left">
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <h4><b>BY AIR</b></h4>
+                    <p style="color:black; font-family-verdana;">Fly to BOLOGNA INTERNATIONAL AIRPORT (BLQ) and continue by taxi (recommended)<br>
+                    or rent a car (recommended, too). Our headquarter is also reachable by bus.</p>
+                </div>
+            </div>
+        <div class="col-md-4"></div>
+            <div class="panel panel-default text-center">
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-asterisk"></span>
+                    <h4><b>BY TAXI OR CAR</b></h4>
+                    <p style="color:black; font-family-Arial;">Cars: Check your trip on GOOGLE MAPS. Free public parking is available in the vicinity of the company.<br>
+                    Bologna Taxi operators:<br>
+                    COTABO tel. + 39 051 372.727<br>    
+                    TAXI CAT tel. + 39 051 534.141<br>
+                    CO.SE.PU.RI tel. +39 051 519.090<br>
+                    SACA tel. +39 051 6349.444<br></p>
+                </div>
+            </div>
+        <div class="col-md-4"></div>
+            <div class="panel panel-default text-right">
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <h4><b>BY BUS</b></h4>
+                    <p style="color:black; font-family-comic;">From "BOLOGNA AUTOSTAZIONE", close to Bologna Centrale railway station: bus 576 - direction Crevalcore (about 55 min). <br>
+                    Our headquarter is 5 minutes by foot from bus stop: "S.AGATA B. CHIESA FRATI".</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+<br>
+
+
+
+   <!-- Form Name -->
+        <div style="margin-bott:0px; margin-right:0px;margin-left:0px; position: absolute;">
+         <div class="form">
+        <div style="margin-right:450px;margin-left:0px;">
+         <legend><h2>Contact Form</h2></legend></div>
+         </div>
+         
+         <form class="form-horizontal" action="saveindb" method="post" ><fieldset> 
+         <div style="margin-bottom:0px; margin-right:450px;margin-left:70px;">
+         <h4>Fields marked with an asterisk (*) must be provided.</h4>
+           <h4>Your Information.</h4></div>
+        
+
+          <!-- Pre-Fix --> 
+           <div class="form-group"> 
+           <label class="col-md-2 control-label" for="">Title - </label> 
+                <div class="col-md-4">
+                <select id="Title" name="title" class="form-control"> 
+                <option value="MR">Mr</option> 
+                <option value="MRS">Mrs</option>
+                <option value="MS">Miss</option>
+                 <option value="MS">Ms</option>
+                  <option value="MS">Other</option>
+                </select>
+               </div>
+            </div> 
+         <!-- Customer Name--> 
+         <div class="form-group"> 
+            <label class="col-md-2 control-label" for="first">First Name - </label>    
+         <div class="col-md-4"> 
+         <input id='first' name="first" type="text" placeholder="Enter Your First Name" class="form-control input-md">
+         </div> 
+          </div> 
+          <!--Last Name-->
+           <div class="form-group"> 
+            <label class="col-md-2 control-label" for="name">Surname - </label>    
+         <div class="col-md-4"> 
+         <input id='surname' name="surname" type="text" placeholder="Enter Your Surname" class="form-control input-md">
+         </div> 
+          </div> 
+         
+          <!-- EMAIL-->
+          <div class="form-group"> 
+          <label class="col-md-2 control-label" for="email">Email - </label>     
+          <div class="col-md-4"> 
+          <input id="email" name="email" type="text" placeholder="Enter Your email " class="form-control input-md">
+          </div>
+           </div>
+            <!-- Telephone-->
+          <div class="form-group"> 
+          <label class="col-md-2 control-label" for="telephone">Contact Number - </label>     
+          <div class="col-md-4"> 
+          <input id="number" name="number" type="text" placeholder="Enter Your Phone Number " class="form-control input-md">
+          </div>
+           </div>
+           
+          <!--Comments -->
+          <div class="container">
+          <div style="margin-right: 0px; margin-left: 50px;">
+          <label class="col-md-5 control-label">  
+          <textarea rows="3" cols="30" name="comment" placeholder="Enter comment here"></textarea>
+          </label>
+          </div>
+          </div>
+          
+          
+          <!-- Button --> 
+          <div class="form-group"> 
+          <label class="col-md-2 control-label" for="email"></label>
+          <div class="col-md-2">
+               <button id="submitbtn" name="submitbtn" class="btn btn-default">Submit</button> 
+          </div> 
+          </div> 
+          </div>
+        
+        </fieldset> 
+        </form>
+        </body> 
+        
+        <div class="map"> 
+            <div style="margin-right:px;margin-left:750px; position: absolute;">
+                <legend><h2>How to find Us</h2></legend>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.9719231259546!2d11.122753915647637!3d44.65892529483232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fc395a3ff12a5%3A0x5a0b7c23921bbc56!2sLamborghini!5e0!3m2!1sen!2sus!4v1462313339768" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
